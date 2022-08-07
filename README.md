@@ -42,7 +42,7 @@ Our model achieves the following performance on :
 
 ### [3D Tetris]
 
-The test accuracy of the O- and SO(3)- steerable CNNs discretized by FD on 3D Tetris with cubic rotations.
+The test accuracy of the $\mathcal{O}$- and $SO(3)$- steerable CNNs discretized by FD on 3D Tetris with cubic rotations.
 
 |Group | Feature fields  | Test acc. (\%)  | Params | Time |
 |-------------| --------- |---------------- | -------------- | -------------- |
@@ -60,9 +60,9 @@ The test accuracy of the SO(3)-steerable CNNs on 3D Tetris with arbitrary rotati
 | Gaussian   |     $5\times 5\times 5$        |     $99.04\pm 0.14$      | 109.5s|
 
 ### [SHREC'17 Retrieval]
-The retrieval performance of V-, T -, O-, I- and SO(3)steerable CNNs, tested on SHREC17. Score is the average value of mAP of micro-average version and macro-average version.
+The retrieval performance of $\mathcal{V}$-, $\mathcal{T}$-, $\mathcal{O}$-, $\mathcal{I}$- and $SO(3)$-steerable CNNs, tested on SHREC17. Score is the average value of mAP of micro-average version and macro-average version.
 |Group| Discretization | Feature field | Score |
-|-|-|-|-|-|
+|-|-|-|-|
 |$\mathcal{V}$| FD | Regular| 52.7 |
 |$\mathcal{T}$| FD | Regular| 57.6 |
 |$\mathcal{O}$| FD | Regular| 58.6 |
@@ -70,21 +70,21 @@ The retrieval performance of V-, T -, O-, I- and SO(3)steerable CNNs, tested on 
 |$SO(3)$| FD | Irreducible | 57.4 |
 |$SO(3)$| Gaussian | Irreducible | 58.3 |
 
-SHREC’ 17 perturbed dataset results. Mixed features mean that the features are composed of regular and V-quotient features.
+SHREC’ 17 perturbed dataset results. Mixed features mean that the features are composed of regular and $\mathcal{V}$-quotient features.
 |  Method  | Score  | P@N | R@N | mAP | P@N | R@N | mAP | Params |
 | ------------------ |---------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |
 | SE3CNN   |   55.5 |70.4| 70.6 |66.1| 49.0 |54.9| 44.9 |0.14M|
-| PDO-s3DCNN ($SO(3)$)   |   58.3 | 73.1 | **73.4** | 69.3 | **52.5** | 55.4 | 47.3 | 0.15M |
-| PDO-s3DCNN ($\mathcal{O}$ with regular features)   |    58.6 | 72.9| 73.0 | 68.8 | 51.9 | 57.7 | 48.3 | 0.15M |
-| PDO-s3DCNN ($\mathcal{O}$ with V-quotient features)   |  55.5 | 69.2 | 69.6 | 65.0 | 48.0 | 56.3 | 46.0 | 0.15M|
-| PDO-s3DCNN ($\mathcal{O}$ with mixed features)   |     **59.1**| **73.2**| 73.3| **69.3** |51.7 | **57.8** | **48.8**| 0.15M|
+| PDO-s3DCNN w.r.t. $SO(3)$   |   58.3 | 73.1 | **73.4** | 69.3 | **52.5** | 55.4 | 47.3 | 0.15M |
+| PDO-s3DCNN w.r.t. $\mathcal{O}$ with regular features   |    58.6 | 72.9| 73.0 | 68.8 | 51.9 | 57.7 | 48.3 | 0.15M |
+| PDO-s3DCNN w.r.t. $\mathcal{O}$ with V-quotient features   |  55.5 | 69.2 | 69.6 | 65.0 | 48.0 | 56.3 | 46.0 | 0.15M|
+| PDO-s3DCNN w.r.t. $\mathcal{O}$ with mixed features   |     **59.1**| **73.2**| 73.3| **69.3** |51.7 | **57.8** | **48.8**| 0.15M|
 
 ### [ISBI 2012 Segmentation]
 
 |  Method  | $V_{\text{rand}}$ | $V_{\text{info}}$|
 | ------------------ |---------------- | -------------- | 
-| PDO-s3DCNN ($\mathcal{V}$)   |     0.98415         |     0.99031 |
-|  PDO-s3DCNN ($\mathcal{O}$)   |     0.98727         |      0.99089  |
+| PDO-s3DCNN w.r.t. $\mathcal{V}$   |     0.98415         |     0.99031 |
+| PDO-s3DCNN w.r.t. $\mathcal{O}$   |     0.98727         |      0.99089  |
 
 ## Citation
 If you found this package useful, please cite
