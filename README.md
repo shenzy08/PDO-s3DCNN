@@ -27,8 +27,8 @@ The 3d models can be converted into voxels of size 64 × 64 × 64 with the follo
 
 To train and evaluate the model(s) in the paper, run following commands:
 
-**3D Tetris**: 
-**For cubical transformations:** python3 tetris/run_tetris.py --model S4 --discretization_mode FD
+**3D Tetris**: \
+**For cubical transformations:** python3 tetris/run_tetris.py --model S4 --discretization_mode FD\
 **For arbitrary rotations:** python3 tetris/run_tetris.py --model SO3 --discretization_mode Gaussian --drop_rate 0.2
 
 **SHREC'17**: python3 shrec17/train.py --log_dir S4 --model_path model/S4_Net.py
